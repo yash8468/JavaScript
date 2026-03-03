@@ -53,4 +53,25 @@ console.log(typeof myfunction)        //function
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+//stack(primitive),heap(non-primitive)
+
+let myyoutubename="yashavhaddotcom";
+
+let anotheername=myyoutubename;
+anotheername="yash__0032"
+
+console.log(myyoutubename)
+console.log(anotheername);
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+userTwo.email="yash@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
 
