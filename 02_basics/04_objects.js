@@ -65,4 +65,33 @@ const users=[                      //array of objects->after you interact with d
 // console.log(Object.entries(tinderuser)) //this returns key-value pair in array format separated by , in a single big array
 
 
+const course={
+    coursename:"JS in hindi",
+    price:999,
+    courseInstructor:"Hitesh"
+}
 
+course.courseInstructor   //every time this way accessing a values is very complex that's why use the de-structure object concept
+
+//object de-structure
+
+const {courseInstructor:Instructor}=course                         //and also you pass the simple short name for particular key {key:short name}=object_name
+// console.log(courseInstructor);
+// console.log(Instructor);
+
+//json format(object with no name)->two format of json 1){ }->only object,  2)[{},{}] ->array of objects
+//and in a json object->for a (key-value) required in a double quotes or as a string format
+
+
+// {
+//     "name":"hitesh",
+//     "coursename":"Js in Hindi",                       //json looks like this type
+//     "price":"free"
+
+// }
+
+[
+    {},
+    {},                                                //this is also another json structure
+    {}
+]
