@@ -4,7 +4,7 @@
 
 console.log(3
             +
-             3)  //code redability should be high at the time of we are writing the code avoid this write in in single line
+             3)  //code redability should be high at the time of we are writing the code avoid this write in  single line
 
 let name="Yash";
 let age=20;

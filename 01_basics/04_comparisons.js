@@ -21,3 +21,4 @@ console.log(undefined>=0)         //in this three cases of undefined that return
 console.log("2"===2)
 
 
+
