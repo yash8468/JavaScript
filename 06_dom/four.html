@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color:#212121; color:#fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName){              //here we required to travel whole node-tree to adding a that text into the li tag=>not optimized
+        const li=document.createElement("li");
+        li.innerHTML=`${langName}`;
+        document.querySelector(".language").appendChild(li);
+    }
+
+    addLanguage("java")
+     
+    function addOptiLanguage(langName){      //this is optimized approach preferred this=>because here we directly append that text-node to exact position ,no need of trvel whole document tree.
+         const li=document.createElement("li");
+         li.appendChild(document.createTextNode(langName));
+         document.querySelector(".language").appendChild(li);
+    }
+     
+    addOptiLanguage("golang");
+    addOptiLanguage("python");
+    addOptiLanguage("SQL")
+
+    //edit
+    const secondLang=document.querySelector("li:nth-child(2)")
+    console.log(secondLang)
+    //secondLang.innerHTML="MOJO"  //1st way to edit
+
+    const newli=document.createElement("li")
+    newli.textContent="MOJO"
+    secondLang.replaceWith(newli)   //2nd way to edit
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML="<li>DSA</li>"  //3rd way to edit
+
+    //remove
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+
+
+</script>
+</html>
