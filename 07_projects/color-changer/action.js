@@ -25,6 +25,9 @@ button.forEach(function(button){
             case "black":
                 body.style.backgroundColor=`${color}`
                 break;
+            case "red":
+                body.style.backgroundColor=`${color}`
+                break;
             default:
                 console.log("click correctly on the box");
                 break;
