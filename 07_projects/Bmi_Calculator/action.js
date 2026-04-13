@@ -29,6 +29,8 @@ form.addEventListener('submit',function(e){
      }else{
        guide.textContent="Overweight: You may want to consider lifestyle changes, balanced nutrition, and exercise to lower your BMI."
      }
+
+     form.reset();
    }
 
    
